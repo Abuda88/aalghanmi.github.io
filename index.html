@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdulrahman Alghanmi</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Tajawal&display=swap" rel="stylesheet">
+  
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome for social icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <h1>Abdulrahman Alghanmi</h1>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <nav id="navbar-menu" class="navbar-menu">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#cv-download">CV</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#training">Training</a></li>
+        <li><a href="#diplomatic">Diplomatic Engagements</a></li>
+        <li><a href="#impact">My Journey of Impact</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Me -->
+  <section id="about" class="intro-section">
+    <div class="intro-container">
+      <div class="intro-photo">
+        <img src="https://i.ibb.co/zHNjmrY7/1-1-removebg-preview.png" alt="Abdulrahman Alghanmi" class="rounded-photo" />
+      </div>
+      <div class="intro-about">
+        <h2>About Me</h2>
+        <p>My name is Abdulrahman Alghanmi, a dedicated Saudi public servant with a deep commitment to public service, diplomacy, and international engagement. My professional journey began in 2010, immediately after high school, when I joined the Ministry of Health as a Human Resources Officer. In 2014, I was awarded a government scholarship and moved to the United States to further my education and contribute to global advocacy.</p>
+        <p>I earned a Bachelor’s degree in Political Science and an Associate of Arts in Humanities and Social Sciences from Utah Valley University. During my time at UVU, I was actively involved in student-led diplomacy and international cooperation. This included participating in the 63rd and 65th Sessions of the UN Commission on the Status of Women (CSW63 and CSW65), the 68th UN Civil Society Conference, and the Mountain Partnership advocacy efforts. I also served as Vice President of both the Sustainable Mountain Development Club and the Foreign Affairs Club.</p>
+        <p>My dedication to service extends back home, with over 1,000 volunteer hours recorded through the Saudi National Center for Non-Profit Sector. I currently work at the Internal Audit Department at the Jeddah Second Health Cluster.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV Section -->
+  <section id="cv-download" class="cv-section" style="text-align: center; padding: 2rem 1rem;">
+    <div class="section-header">
+      <h2>Download My CV</h2>
+    </div>
+    <a href="https://drive.google.com/uc?export=download&id=17VdOOuIGHfXLGKyh_GFstddw_zhEQnmc" class="download-btn" download>
+      📄 Download CV (PDF)
+    </a>
+  </section>
+
+  <!-- (Other sections remain unchanged, only structure fix was required) -->
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>© 2025 Abdulrahman Alghanmi. All rights reserved.</p>
+      <div class="footer-icons">
+        <a href="mailto:Alghanmislc@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="http://linkedin.com/in/abdulrahmanalghanmi" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <a href="#" class="scroll-top" id="scrollTopBtn" title="Go to top">
+    &#8679;
+  </a>
+
+  <!-- Scroll to Top JavaScript -->
+  <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    };
+  </script>
+
+  <!-- Responsive Navbar JavaScript -->
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("navbar-menu");
+
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("open");
+    });
+
+    function closeMenu() {
+      if (navMenu.classList.contains("open")) {
+        navMenu.classList.remove("open");
+      }
+    }
+
+    window.addEventListener("scroll", closeMenu);
+
+    document.addEventListener("click", (e) => {
+      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        closeMenu();
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+
+<!-- Experience Section -->
+<section id="experience" class="experience-section">
+  <div class="section-header">
+    <h2>Experience</h2>
+    
+  </div>
+  <div class="experience-grid">
+    <div class="experience-card">
+      <h3>Internal Auditor – Jeddah Second Health Cluster</h3>
+      <p>Oct 2023 – Present</p>
+      <p>Conduct internal audits, ensure compliance with health sector transformation policies, and provide insights for continuous improvement.</p>
+    </div>
+
+    <div class="experience-card">
+      <h3>Public Relations Specialist – Ministry of Health</h3>
+      <p>May 2023 – Oct 2023</p>
+      <p>Managed outreach campaigns, built partnerships with government entities, and coordinated community health awareness programs.</p>
+    </div>
+
+    <div class="experience-card">
+      <h3>Human Resources Officer – Ministry of Health</h3>
+      <p>2011 – 2014</p>
+      <p>Handled personnel files, supported recruitment and onboarding processes, and assisted in HR policy implementation.</p>
+    </div>
+  </div>
+</section>
+
+    
+
+<!-- Education Section -->
+<section id="education" class="education-section">
+  <div class="section-header">
+    <h2>Education</h2>
+  </div>
+  <div class="education-grid">
+    <div class="education-card">
+      <a href="https://ibb.co/Z16HYH6p" target="_blank">
+        <img src="https://i.ibb.co/84DzdzDL/1226912-e-Diploma-2-page-0001.jpg" alt="Bachelor Degree" class="education-thumbnail" />
+      </a>
+      <p>Bachelor of Arts in Political Science<br>Utah Valley University 2018-2023</p>
+    </div>
+    <div class="education-card">
+      <a href="https://ibb.co/jvsBTwgm" target="_blank">
+        <img src="https://i.ibb.co/xSdPDgJW/Alghanmi-s-Associate-Degree-2-1-page-0001.jpg" alt="Associate Degree" class="education-thumbnail" />
+      </a>
+      <p>Associate of Arts in Humanities and Social Sciences<br>Utah Valley University 2018-2022</p>
+    </div>
+  </div>
+</section>
+
+<!-- Certificates Section -->
+<section id="certificates" class="certificates-section">
+  <div class="section-header">
+    <h2>Certificates</h2>
+  </div>
+
+  <div class="certificates-grid">
+    <div class="certificate-card">
+      <a href="https://ibb.co/BHvfT5pj" target="_blank">
+        <img src="https://i.ibb.co/35VTS93W/Jeidah-Second-Health-Cluster-page-0001.jpg" alt="Jeddah Second Health Cluster Certificate of Appreciation">
+      </a>
+      <p>Certificate of Appreciation – Jeddah Second Health Cluster (2024)<br>
+      In recognition of outstanding contribution</p>
+    </div>
+
+    <div class="certificate-card">
+      <a href="https://ibb.co/CpW9SVG2" target="_blank">
+        <img src="https://i.ibb.co/hxCdT2zf/4d718e0c-5447-4df9-ad2e-29d8c49514d8-page-0001.jpg" alt="Volunteer Participation Certificate">
+      </a>
+      <p><strong>📄 Volunteer Participation Record</strong><br>
+      Issued by the Saudi National Center for Non-Profit Sector as official documentation of completing 1,116 hours of volunteer work across 14 organizations between July 2023 and June 2025.</p>
+      <a href="https://drive.google.com/file/d/1xLj-wEp8K9Qj2BWZCvzPjUgVOW4_FQVn/view?usp=sharing" class="btn" target="_blank">📥 Download Full Summary</a>
+    </div>
+
+    <div class="certificate-card">
+      <a href="https://ibb.co/FbqdWFqr" target="_blank">
+        <img src="https://i.ibb.co/xS8rsN8k/CSW63-page-0001.jpg" alt="UIMF Certificate – CSW63 Participation">
+      </a>
+      <p>Certificate of Participation – CSW63, Utah International Mountain Forum (2019)</p>
+    </div>
+
+    <div class="certificate-card">
+      <a href="https://i.ibb.co/twKXHDPQ/Saudi-Arabian-Cultural-Mission-To-The-USA-page-0001.jpg" target="_blank">
+        <img src="https://i.ibb.co/twKXHDPQ/Saudi-Arabian-Cultural-Mission-To-The-USA-page-0001.jpg" alt="SACM Certificate of Appreciation – University of Utah">
+      </a>
+      <p>Certificate of Appreciation – Saudi Arabian Cultural Mission (2014–2015)<br>
+      For service as Acting Media Supervisor at the University of Utah</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="training" class="training-section">
+  <div class="section-header">
+    <h2>Training and Development</h2>
+  </div>
+
+  <div class="certificates-grid">
+    <div class="certificate-card">
+      <img src="https://i.ibb.co/dwjCzywH/page-0001.jpg" alt="Effective Communication Skills Certificate">
+      <p>Effective Communication Skills<br><small>Rabigh General Hospital & Jeddah Second Health Cluster – May 2024</small></p>
+    </div>
+
+    <div class="certificate-card">
+      <img src="https://i.ibb.co/pjtKNDqW/Abdulrahman-Atiah-A-Alghanmi-page-0001.jpg" alt="Health Project Management Certificate">
+      <p>Health Project Management<br><small>Qosco for Training – May 2024</small></p>
+    </div>
+
+    <div class="certificate-card">
+      <img src="https://i.ibb.co/Q7gvbzHS/page-0001.jpg" alt="Emotional Intelligence Certificate">
+      <p>Emotional Intelligence<br><small>Saudi Institute of Public Administration – February 2024</small></p>
+    </div>
+
+    <div class="certificate-card">
+      <img src="https://i.ibb.co/CpxK6MPW/page-0001.jpg" alt="Work Ethics and Code of Conduct Certificate">
+      <p>Work Ethics and Code of Conduct<br><small>Saudi Institute of Public Administration – January 2024</small></p>
+    </div>
+
+    <div class="certificate-card">
+      <img src="https://i.ibb.co/wFKbQ4Fc/Ministry-of-Health-page-0001.jpg" alt="Administrative Oversight Certificate">
+      <p>Administrative Oversight<br><small>Ministry of Health – Jeddah Health Affairs – September 2023</small></p>
+    </div>
+  </div>
+</section>
+
+
+
+
+  
+<!-- Diplomatic Engagements Section -->
+<section id="diplomatic" class="impact-section">
+  <div class="section-header">
+    <h2>Diplomatic Engagements</h2>
+  </div>
+  <div class="impact-timeline">
+
+    <!-- Aksoltan Ataýewa -->
+    <div class="impact-item with-photo">
+      <div class="impact-text">
+        <h3>2019</h3>
+        <p>Meeting with Aksoltan Ataýewa, Permanent Representative of Turkmenistan to the United Nations.</p>
+      </div>
+      <div class="impact-image">
+        <a href="https://i.ibb.co/bg37JDJ4/2025-06-29-230211.png" target="_blank">
+          <img src="https://i.ibb.co/bg37JDJ4/2025-06-29-230211.png" alt="Meeting with Aksoltan Ataýewa" class="impact-thumbnail">
+        </a>
+      </div>
+    </div>
+
+    <!-- Mahmadamin Mahmadaminov -->
+    <div class="impact-item with-photo">
+      <div class="impact-text">
+        <h3>2019</h3>
+        <p>Meeting with Mahmadamin Mahmadaminov, Permanent Representative of Tajikistan to the United Nations.</p>
+      </div>
+      <div class="impact-image">
+        <a href="https://i.ibb.co/bR7ZrnCq/2025-06-29-230223.png" target="_blank">
+          <img src="https://i.ibb.co/bR7ZrnCq/2025-06-29-230223.png" alt="Meeting with Mahmadamin Mahmadaminov" class="impact-thumbnail">
+        </a>
+      </div>
+    </div>
+
+    <!-- Ben McAdams -->
+    <div class="impact-item with-photo">
+      <div class="impact-text">
+        <h3>2019</h3>
+        <p>Meeting with U.S. Congressman Ben McAdams during CSW63. He later recognized our contributions in the U.S. Congressional Record.</p>
+      </div>
+      <div class="impact-image">
+        <a href="https://i.ibb.co/ZjXRy2h/2025-06-29-230457.png" target="_blank">
+          <img src="https://i.ibb.co/ZjXRy2h/2025-06-29-230457.png" alt="Meeting with Ben McAdams" class="impact-thumbnail">
+        </a>
+      </div>
+    </div>
+
+    <!-- Kurmanbek Dyikanbaev -->
+    <div class="impact-item with-photo">
+      <div class="impact-text">
+        <h3>2019</h3>
+        <p>Meeting with Kurmanbek Dyikanbaev, Permanent Representative of the Kyrgyz Republic to the United Nations.</p>
+      </div>
+      <div class="impact-image">
+        <a href="https://i.ibb.co/RTBp6fQw/2025-07-04-074036.png" target="_blank">
+          <img src="https://i.ibb.co/RTBp6fQw/2025-07-04-074036.png" alt="Meeting with Kurmanbek Dyikanbaev" class="impact-thumbnail">
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+ <!-- My Journey of Impact Section -->
+<section id="impact" class="impact-section">
+  <div class="section-header">
+    <h2>My Journey of Impact</h2>
+  </div>
+  <div class="impact-timeline">
+
+
+    <div class="impact-item with-photo">
+  <div class="impact-text">
+    <h3>2021</h3>
+    <p>
+      Participated virtually in CSW65 and contributed with the Utah International Mountain Forum (UIMF). 
+      Our efforts were highlighted by the Mountain Partnership, and our photo was featured in their official report.
+    </p>
+  </div>
+  <div class="impact-image">
+    <a href="https://i.ibb.co/cSvSJ6Br/2025-07-04-072124.png" target="_blank">
+      <img src="https://i.ibb.co/cSvSJ6Br/2025-07-04-072124.png" alt="CSW65 Participation" class="impact-thumbnail">
+    </a>
+  </div>
+</div>
+
+     
+
+  <div class="impact-item with-photo">
+  <div class="impact-text">
+    <h3>2021</h3>
+    <p>
+      Organized and co-hosted the <strong>“Bears Ears Roundtable Discussion”</strong> at Utah Valley University in my role as Vice President of the Sustainable Mountain Development Club. The event brought together students, faculty, and local leaders to discuss Indigenous land preservation and environmental stewardship.
+    </p>
+  </div>
+  <div class="impact-image">
+    <a href="https://i.ibb.co/FbFr114h/21-11-16-ears3.png" target="_blank">
+      <img src="https://i.ibb.co/FbFr114h/21-11-16-ears3.png" alt="Bears Ears Roundtable at UVU" class="impact-thumbnail" />
+    </a>
+  </div>
+</div>
+
+<div class="impact-item with-photo">
+  <div class="impact-text">
+    <h3>2019</h3>
+    <p>
+      Contributed to the 10th annual International Mountain Day event organized by the Utah International Mountain Forum (UIMF) at UVU. In recognition of my involvement and support for mountain advocacy at the United Nations, I received a Certificate of Appreciation from the <strong>Food and Agriculture Organization (FAO)</strong> of the United Nations.
+    </p>
+  </div>
+  <div class="impact-image">
+    <a href="https://ibb.co/gZHs8Zyr" target="_blank">
+      <img src="https://i.ibb.co/tpky6pBH/2025-06-29-230123.png" alt="FAO-UN Certificate of Appreciation" class="impact-thumbnail">
+    </a>
+  </div>
+</div>
+
+<div class="impact-item with-photo">
+  <div class="impact-text">
+    <h3>2019</h3>
+    <p>
+      Represented UVU at the 63rd United Nations Commission on the Status of Women (CSW63). Met with UN ambassadors and global leaders. 
+      Recognized in the <a href="https://www.congress.gov/116/crec/2019/04/12/165/64/CREC-2019-04-12-pt1-PgE453-2.pdf" target="_blank">U.S. Congressional Record (Vol. 165, No. 64)</a> and featured in a tweet by U.S. Congressman 
+      <a href="https://x.com/BenMcAdamsUT/status/1120831639838269440?s=46" target="_blank">@BenMcAdamsUT</a>.
+    </p>
+  </div>
+  <div class="impact-image">
+    <a href="https://i.ibb.co/BH0mLjRJ/41-F8472-E-ED88-48-AB-A130-EA1-D4728-E179-1170-0000007-C5341-DF63.jpg" target="_blank">
+      <img src="https://i.ibb.co/BH0mLjRJ/41-F8472-E-ED88-48-AB-A130-EA1-D4728-E179-1170-0000007-C5341-DF63.jpg" alt="Speaking at CSW63" class="impact-thumbnail">
+    </a>
+  </div>
+</div>
+
+
+<div class="impact-item with-photo">
+  <div class="impact-text">
+    <h3>2019</h3>
+    <p>
+      Participated in the 68th United Nations Civil Society Conference held in Salt Lake City as a member of the Utah International Mountain Forum (UIMF), contributing to global discussions on sustainable mountain development.
+    </p>
+  </div>
+  <div class="impact-image">
+    <a href="https://i.ibb.co/hFGxKj7d/2025-06-29-230711.png" target="_blank">
+      <img src="https://i.ibb.co/hFGxKj7d/2025-06-29-230711.png" alt="68th UN Civil Society Conference" class="impact-thumbnail">
+    </a>
+  </div>
+</div>
+
+
+
+ <div class="impact-item with-photo">
+  <div class="impact-text">
+    <h3>2019</h3>
+    <p>
+      Introduced keynote speaker <strong>Dr. Dean Robinson</strong> during <em>World Polio Day</em> at Utah Valley University in collaboration with the Orem-Lindon Rotary Club. The event focused on global efforts to end polio and emphasized youth participation in service and advocacy.
+    </p>
+  </div>
+  <div class="impact-image">
+    <a href="https://i.ibb.co/C5WxTRgq/2025-06-29-231004.png" target="_blank">
+      <img src="https://i.ibb.co/C5WxTRgq/2025-06-29-231004.png" alt="World Polio Day - UVU" class="impact-thumbnail">
+    </a>
+  </div>
+</div>
+  </section>
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="section-header">
+    <h2>Contact</h2>
+  </div>
+  
+    <div class="contact-container">
+      <p>You can reach me via email or LinkedIn:</p>
+      
+      <div class="contact-icons">
+        <a href="mailto:Alghanmislc@gmail.com" class="contact-link" target="_blank">
+          <i class="fas fa-envelope"></i>
+          Alghanmislc@gmail.com
+        </a>
+        <a href="http://linkedin.com/in/abdulrahmanalghanmi" class="contact-link" target="_blank">
+          <i class="fab fa-linkedin"></i>
+          linkedin.com/in/abdulrahmanalghanmi
+        </a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
+<!-- Footer Section -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <p>© 2025 Abdulrahman Alghanmi. All rights reserved.</p>
+    <div class="footer-icons">
+      <a href="mailto:Alghanmislc@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="http://linkedin.com/in/abdulrahmanalghanmi" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Scroll to Top Button -->
+<a href="#" class="scroll-top" id="scrollTopBtn" title="Go to top">
+  &#8679;
+</a>
+
+<!-- Scroll to Top JavaScript -->
+<script>
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  };
+</script>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navbarMenu = document.getElementById('navbar-menu');
+
+  menuToggle.addEventListener('click', () => {
+    navbarMenu.classList.toggle('active');
+  });
+</script>
+
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navMenu = document.getElementById("navbar-menu");
+
+  // Toggle menu on button click
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+  });
+
+  // Function to close the menu
+  function closeMenu() {
+    if (navMenu.classList.contains("open")) {
+      navMenu.classList.remove("open");
+    }
+  }
+
+  // Close on scroll
+  window.addEventListener("scroll", closeMenu);
+
+  // Close when clicking outside
+  document.addEventListener("click", (e) => {
+    if (
+      !navMenu.contains(e.target) &&
+      !menuToggle.contains(e.target)
+    ) {
+      closeMenu();
+    }
+  });
+</script>
+
+</body>
+</html>
